@@ -360,12 +360,6 @@ if st.session_state.stage >= 4 and not st.session_state.show_quiz:
     </div>
     ''', unsafe_allow_html=True)
     
-    col1, col2, col3 = st.columns([1, 1, 1])
-    with col2:
-        if st.button("Try to Answer", use_container_width=True):
-            st.session_state.show_quiz = True
-            st.session_state.auto_progress = False
-            st.rerun()
 
     col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
