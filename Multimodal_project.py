@@ -436,7 +436,6 @@ if st.session_state.revealed:
     st.markdown('''
     <div class="final-message">
         <p>Understanding—as noted above—develops after much more effort, contemplation and experience in a particular domain, whether technical or non-technical.</p>
-        <p>We are able to know things today, after an ever-increasing pace in formats much better than this through the internet but the deluge might be affecting our ability to comprehend it or see deeper connections.</p>
-        <p style="margin-top: 2rem; color: #64748b; font-size: 1rem;">The medium is the message.</p>
+        <p>We are able to know things today, after an ever-increasing pace in formats much better than this through the internet, but the deluge of information might also be affecting our ability to comprehend it or see deeper connections.</p>
     </div>
     ''', unsafe_allow_html=True)
