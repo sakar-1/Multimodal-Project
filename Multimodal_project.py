@@ -363,7 +363,7 @@ if st.session_state.stage >= 4 and not st.session_state.show_quiz:
 
     col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
-        if st.button("Proceed", use_container_width=True):
+        if st.button("The Problem", use_container_width=True):
             st.session_state.revealed = True
             st.rerun()
 
@@ -377,7 +377,7 @@ if st.session_state.revealed:
         <div style="font-size: 2rem; margin-bottom: 1rem;">⚠️</div>
         <div class="layer-title">Layer 1: Misinformation</div>
         <div class="layer-text">
-            Sometimes what you see is simply <strong>wrong</strong>. Popularly available explanations
+            Sometimes what you are presented is simply <strong>wrong</strong>. Popularly available explanations
             frequently contain fundamental errors.
         </div>
     </div>
@@ -405,12 +405,12 @@ if st.session_state.revealed:
         <div class="layer-title">Layer 3: The Illusion of Understanding</div>
         <div class="layer-text">
             But here's the deepest problem and the core of my argument: <strong>even when everything is correct</strong>, 
-            merely listening to the explanation, seeing the equations and watching animations creates a false sense of comprehension.
+            merely listening to the explanation, seeing the equations, and watching animations creates a false sense of comprehension.
         </div>
         <div class="layer-text">
-            Right here Maxwell's equations were rendered and a sentence explained what idea each equation contained.
-            One might or might not be familiar with the signs and symbols; 
-            Even if you know the symbols, can you actually use them? Do you understand why changing magnetic fields create electric fields? 
+            Right here, Maxwell's equations were rendered and a sentence explained what idea each equation contained.
+            One may or may not be familiar with the signs and symbols; 
+            But even if you know the symbols, can you actually use them? Do you understand why changing magnetic fields create electric fields? 
             Could you explain to someone why light is an electromagnetic wave?
         </div>
     </div>
@@ -436,6 +436,6 @@ if st.session_state.revealed:
     st.markdown('''
     <div class="final-message">
         <p>Understanding—as noted above—develops after much more effort, contemplation and experience in a particular domain, whether technical or non-technical.</p>
-        <p>We are able to know things today, after an ever-increasing pace in formats much better than this through the internet, but the deluge of information might also be affecting our ability to comprehend it or see deeper connections.</p>
+        <p>We are able to know things today, at an ever-increasing pace in formats much better than this through the internet, but the deluge of information might also be affecting our ability to comprehend it or see deeper connections.</p>
     </div>
     ''', unsafe_allow_html=True)
