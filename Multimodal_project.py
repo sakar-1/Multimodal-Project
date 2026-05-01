@@ -391,7 +391,6 @@ if st.session_state.revealed:
         <div class="layer-text">
             Even when the fundamental explanation is correct, the application of the fundamental knowledge into another realm are often <strong>incomplete or incorrect</strong>. 
             For example: when using the above equations in circuit analysis or encoding electromagnetic waves for telecommunication.
-            understanding of the curl operator, knowledge of wave solutions to PDEs, and careful mathematical reasoning.
         </div>
         <div class="layer-example">
         </div>
