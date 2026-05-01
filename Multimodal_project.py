@@ -309,7 +309,7 @@ equations = [
 # Header
 st.markdown('<div style="text-align: center;"><span class="badge">THE FOUNDATION OF ELECTROMAGNETISM</span></div>', unsafe_allow_html=True)
 st.markdown('<h1 class="main-title">Maxwell\'s Equations</h1>', unsafe_allow_html=True)
-st.markdown('<p class="subtitle">Four elegant equations that completely describe all electromagnetic phenomena</p>', unsafe_allow_html=True)
+st.markdown('<p class="subtitle">These equations completely describe all electromagnetic phenomena</p>', unsafe_allow_html=True)
 
 # Progress indicator
 if st.session_state.stage < 4:
@@ -352,10 +352,10 @@ if st.session_state.stage >= 4 and not st.session_state.show_quiz:
         </div>
         <div style="height: 1px; background: linear-gradient(to right, transparent, rgba(245, 158, 11, 0.3), transparent); margin: 2rem 0;"></div>
         <div class="question-text" style="color: #fef3c7;">
-            Do you now understand electromagnetic waves?
+            But does just that enable someone to understand the nature and properties of electromagnetic waves?
         </div>
         <div class="question-subtext">
-            Can you design an antenna? Explain why light is transverse? Derive the wave equation?
+            Can someone design an antenna or an electric motor just by looking at these equations (these equations are all that are needed)?
         </div>
     </div>
     ''', unsafe_allow_html=True)
@@ -367,22 +367,9 @@ if st.session_state.stage >= 4 and not st.session_state.show_quiz:
             st.session_state.auto_progress = False
             st.rerun()
 
-# Quiz Section
-if st.session_state.show_quiz and not st.session_state.revealed:
-    st.markdown("<br><br>", unsafe_allow_html=True)
-    st.markdown("### Let's test your understanding:")
-    st.markdown("Using only Maxwell's equations shown above, derive why electromagnetic waves propagate at the speed of light.")
-    
-    st.session_state.quiz_answer = st.text_area(
-        "Write your derivation here...",
-        value=st.session_state.quiz_answer,
-        height=150,
-        label_visibility="collapsed"
-    )
-    
     col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
-        if st.button("Reveal the Truth", use_container_width=True):
+        if st.button("Proceed", use_container_width=True):
             st.session_state.revealed = True
             st.rerun()
 
@@ -396,13 +383,8 @@ if st.session_state.revealed:
         <div style="font-size: 2rem; margin-bottom: 1rem;">⚠️</div>
         <div class="layer-title">Layer 1: Misinformation</div>
         <div class="layer-text">
-            Sometimes what you see is simply <strong>wrong</strong>. Popular explanations of Maxwell's equations 
-            contain fundamental errors—confusing E and B, misrepresenting curl and divergence, claiming 
-            equations that aren't actually Maxwell's are canonical.
-        </div>
-        <div class="layer-example">
-            Example: Videos claiming "we don't fundamentally understand how computers work" despite Boolean 
-            algebra and electromagnetic theory being completely understood.
+            Sometimes what you see is simply <strong>wrong</strong>. Popularly available explanations
+            frequently contain fundamental errors.
         </div>
     </div>
     ''', unsafe_allow_html=True)
@@ -413,12 +395,11 @@ if st.session_state.revealed:
         <div style="font-size: 2rem; margin-bottom: 1rem;">⚠️</div>
         <div class="layer-title">Layer 2: Flawed Derivations</div>
         <div class="layer-text">
-            Even when the starting point is correct, derivations are often <strong>incomplete or incorrect</strong>. 
-            To actually derive the wave equation from Maxwell's equations requires vector calculus, 
+            Even when the fundamental explanation is correct, the application of the fundamental knowledge into another realm are often <strong>incomplete or incorrect</strong>. 
+            For example: when using the above equations in circuit analysis or encoding electromagnetic waves for telecommunication.
             understanding of the curl operator, knowledge of wave solutions to PDEs, and careful mathematical reasoning.
         </div>
         <div class="layer-example">
-            Most visualizations skip these steps entirely, leaving viewers with the illusion they've "seen" the derivation.
         </div>
     </div>
     ''', unsafe_allow_html=True)
@@ -429,16 +410,14 @@ if st.session_state.revealed:
         <div style="font-size: 2rem; margin-bottom: 1rem;">🧠</div>
         <div class="layer-title">Layer 3: The Illusion of Understanding</div>
         <div class="layer-text">
-            But here's the deepest problem: <strong>even when everything is correct</strong>, 
-            merely seeing equations and watching animations creates a false sense of comprehension.
+            But here's the deepest problem and the core of my argument: <strong>even when everything is correct</strong>, 
+            merely listening to the explanation, seeing the equations and watching animations creates a false sense of comprehension.
         </div>
         <div class="layer-text">
-            You saw Maxwell's equations beautifully rendered. You may have felt you were learning. 
-            But can you actually use them? Do you understand why changing magnetic fields create electric fields? 
+            Right here Maxwell's equations were rendered and a sentence explained what idea each equation contained.
+            One might or might not be familiar with the signs and symbols; 
+            Even if you know the symbols, can you actually use them? Do you understand why changing magnetic fields create electric fields? 
             Could you explain to someone why light is an electromagnetic wave?
-        </div>
-        <div class="layer-text" style="font-weight: 500;">
-            Seeing is not understanding. Exposure is not comprehension.
         </div>
     </div>
     ''', unsafe_allow_html=True)
@@ -462,8 +441,8 @@ if st.session_state.revealed:
     # Final Message
     st.markdown('''
     <div class="final-message">
-        <p>This demonstration itself is multimedia. You saw animations, colors, beautiful typography.</p>
-        <p>Did it make you understand Maxwell's equations? Or did it just make you <em>feel</em> like you were learning?</p>
+        <p>Understanding—as noted above—develops after much more effort, contemplation and experience in a particular domain, whether technical or non-technical.</p>
+        <p>We are able to know things today, after an ever-increasing pace in formats much better than this through the internet but the deluge might be affecting our ability to comprehend it or see deeper connections.</p>
         <p style="margin-top: 2rem; color: #64748b; font-size: 1rem;">The medium is the message.</p>
     </div>
     ''', unsafe_allow_html=True)
